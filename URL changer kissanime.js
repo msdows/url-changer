@@ -12,18 +12,19 @@ function appendToCurrentUrl(text) {
     // Obter a URL atual
     var url = window.location.href;
 
-    // Verificar se o texto já está na URL
-    if (url.indexOf(text) === -1) {
-        // Adicionar o texto ao final da URL
-        var newUrl = url + text;
+    // Verificar se a URL termina com um número
+    if (/\d$/.test(url)) {
+        // Verificar se o texto já está na URL
+        if (url.indexOf(text) === -1) {
+            // Adicionar o texto ao final da URL
+            var newUrl = url + text;
 
-        // Redirecionar para a nova URL
-        window.location.href = newUrl;
+            // Redirecionar para a nova URL
+            window.location.href = newUrl;
+        }
     }
 }
 
-// Escolhe qual server usar
+// Adiciona o texto ao fim do link
 var textToAppend = "&s=oserver";
 appendToCurrentUrl(textToAppend);
-
-
