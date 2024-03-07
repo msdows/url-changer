@@ -1,2 +1,2 @@
 # url-changer
-Este script para o Tempermonkey modifica a URL de um site para acrescentar algo ao final do mesmo.
+Este script para o Tempermonkey modifica a URL de um site para acrescentar algo ao final do mesmo. Já está configurado para o site https://kissanime.com.ru/ e adiciona "&s=oserver" ao final de qualquer anime do mesmo. Isso já garante que o servidor ao qual o anime será assistido seja especificamente o meu favorito. É possível modificar tanto o site alvo quanto o conteúdo a ser acrescentado facilmente.
